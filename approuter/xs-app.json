@@ -1,0 +1,11 @@
+{
+  "welcomeFile": "/userInfo",
+  "routes": [
+    {
+      "source": "/(.*)$",
+      "target": "$1",
+      "destination": "token-destination",
+      "authenticationType": "xsuaa"
+    }
+  ]
+}

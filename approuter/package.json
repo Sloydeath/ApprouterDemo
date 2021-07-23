@@ -1,0 +1,13 @@
+{
+  "name": "denis-approuter",
+  "dependencies": {
+    "@sap/approuter": "*"
+  },
+  "scripts": {
+    "start": "node approuter.js"
+  },
+  "engines": {
+    "node": "12.22.1",
+    "npm": "6.11.3"
+  }
+}
