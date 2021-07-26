@@ -40,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers(GET, "/goodbye").hasAuthority("Read")
-                .antMatchers("/**").permitAll()
+                .antMatchers(GET, "/hello").hasAuthority("Admin")
                 .anyRequest().authenticated()
                 .and()
                 .oauth2ResourceServer()

@@ -1,8 +1,5 @@
 {
   "xsappname": "denis-project",
-  "oauth2-configuration": {
-    "credential-types": ["x509"]
-  },
   "tenant-mode": "dedicated",
   "scopes": [
     {
@@ -19,15 +16,13 @@
       "name": "Viewer",
       "description": "View Data",
       "scope-references": [
-        "$XSAPPNAME.Read",
-        "uaa.user"
+        "$XSAPPNAME.Read"
       ]
     },
     {
       "name": "Administrator",
       "description": "View Sensitive Data",
       "scope-references": [
-        "$XSAPPNAME.Read",
         "$XSAPPNAME.Admin"
       ]
     }
